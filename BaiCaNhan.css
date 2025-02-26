@@ -1,0 +1,197 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 900px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 5px rgba(0, 123, 255, 0.7);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #110a0c;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avatar-container img:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0px 0px 10px 3px rgba(11, 10, 10, 0.6);
+}
+
+.info-container h1 {
+  font-size: 28px;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-container p {
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.projects,
+.education,
+.summary,
+.skills,
+.contact,
+.experience {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projects:hover,
+.education:hover,
+.summary:hover,
+.skills:hover,
+.contact:hover,
+.experience:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 5px rgba(63, 65, 67, 0.7);
+}
+
+.project-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 0px 10px 3px rgba(4, 3, 3, 0.6);
+}
+
+.project-item h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-item p {
+  font-size: 16px;
+  color: #444;
+}
+
+.project-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #575a5e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-item a:hover {
+  color: #030203;
+  text-decoration: underline;
+}
+
+/* Thêm phần sản phẩm cá nhân */
+.personal-projects {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.personal-projects:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 5px rgba(145, 147, 149, 0.7);
+}
+
+.personal-project-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personal-project-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 0px 10px 3px rgba(14, 13, 13, 0.6);
+}
+
+.personal-project-item h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.personal-project-item p {
+  font-size: 16px;
+  color: #444;
+}
+
+.personal-project-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #9d9fa1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.personal-project-item a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
